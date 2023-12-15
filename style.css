@@ -1,0 +1,270 @@
+:root {
+  --White: #ffffff;
+  --Black: #000000;
+  --CL-Black: #000b0a;
+  --CL-Gray: #737373;
+  --CL-Gray-2: #a6a6a6;
+  --CL-Gray-3: #f0f0f0;
+  --CL-Green: #2ec4b6;
+  --Headings: #011c34;
+  --BG: rgb(46, 196, 182, 0.04);
+}
+
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: max-content;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  all: unset;
+  outline: revert;
+  cursor: revert;
+  font: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+span {
+  overflow-wrap: break-word;
+}
+
+/* START */
+
+main {
+  display: flex;
+  gap: 120px;
+  background-color: var(--BG);
+  padding: 81px 140px 80px 140px;
+}
+
+@media (max-width: 1031px) {
+  main {
+    flex-direction: column;
+    height: fit-content;
+    background: #f7fdfc;
+    padding: 28px 24px 64px 24px;
+    gap: 40px;
+  }
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  margin-top: 124px;
+  gap: 50px;
+}
+
+@media (max-width: 1031px) {
+  .cta {
+    margin-top: 0;
+  }
+}
+
+.cta > svg {
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cta-heading {
+  color: var(--CL-Black, #000b0a);
+  font-family: Brown;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.8px;
+}
+
+.cta-description {
+  color: var(--CL-Gray, #737373);
+  font-family: Brown;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 460px;
+}
+
+.cta-description.slim {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .cta-description.slim {
+    display: block;
+  }
+
+  .cta-description.wide {
+    display: none;
+  }
+}
+
+.form {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 6px;
+  background: #fff;
+  padding: 40px;
+
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+}
+
+.slim {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 24px 16px 30px 16px;
+  }
+
+  .disclaimer.slim {
+    display: block;
+    margin-top: -16px;
+  }
+
+  .disclaimer.wide {
+    display: none;
+  }
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pair-inputs {
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 450px) {
+  .pair-inputs {
+    flex-direction: column;
+  }
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.input-heading {
+  color: var(--Headings, #011c34);
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  padding: 14px 16px;
+  border-radius: 2px;
+  border: 1px solid var(--CL-Gray-3, #f0f0f0);
+}
+
+.pair-inputs:first-of-type > .input-container:first-child > input {
+  border: 1px solid var(--CL-Green, #2ec4b6);
+}
+
+.pair-inputs:first-of-type > .input-container:first-child > input::placeholder {
+  color: var(--Text-Headings, #011c34);
+  font-weight: 400;
+}
+
+input + svg {
+  position: absolute;
+  right: 8px;
+  bottom: 12px;
+}
+
+.password-icon {
+  right: 16px;
+  bottom: 16px;
+}
+
+::placeholder {
+  color: var(--CL-Gray, #737373);
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.register {
+  height: 48px;
+  background-color: var(--CL-Green, #2ec4b6);
+  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.1));
+  color: var(--Basic-100, #fff);
+  text-align: center;
+  font-family: Sofia Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  border-radius: 2px;
+}
+
+.disclaimer {
+  color: #000;
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.disclaimer > a {
+  color: var(--CL-Green, #2ec4b6);
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  text-decoration-line: underline;
+}

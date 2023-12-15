@@ -21,6 +21,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 html,
@@ -96,7 +97,7 @@ main {
 
 .cta-heading {
   color: var(--CL-Black, #000b0a);
-  font-family: Brown;
+  font-family: Brown, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -106,7 +107,7 @@ main {
 
 .cta-description {
   color: var(--CL-Gray, #737373);
-  font-family: Brown;
+  font-family: Brown, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -188,7 +189,7 @@ form {
 
 .input-heading {
   color: var(--Headings, #011c34);
-  font-family: Sofia Pro;
+  font-family: Sofia Pro, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -202,11 +203,6 @@ input {
   padding: 14px 16px;
   border-radius: 2px;
   border: 1px solid var(--CL-Gray-3, #f0f0f0);
-}
-
-input:focus, input:hover {
-  border: 1px solid var(--CL-Green, #2ec4b6);
-  outline: none;
 }
 
 .pair-inputs:first-of-type > .input-container:first-child > input {
@@ -231,7 +227,7 @@ input + svg {
 
 ::placeholder {
   color: var(--CL-Gray, #737373);
-  font-family: Sofia Pro;
+  font-family: Sofia Pro, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -245,7 +241,7 @@ input + svg {
   filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.1));
   color: var(--Basic-100, #fff);
   text-align: center;
-  font-family: Sofia Pro;
+  font-family: Sofia Pro, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -256,7 +252,7 @@ input + svg {
 
 .disclaimer {
   color: #000;
-  font-family: Sofia Pro;
+  font-family: Sofia Pro, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -266,7 +262,7 @@ input + svg {
 
 .disclaimer > a {
   color: var(--CL-Green, #2ec4b6);
-  font-family: Sofia Pro;
+  font-family: Sofia Pro, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;

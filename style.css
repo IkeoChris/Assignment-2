@@ -204,6 +204,11 @@ input {
   border: 1px solid var(--CL-Gray-3, #f0f0f0);
 }
 
+input:focus {
+  border: 1px solid var(--CL-Green, #2ec4b6);
+  outline: none;
+}
+
 .pair-inputs:first-of-type > .input-container:first-child > input {
   border: 1px solid var(--CL-Green, #2ec4b6);
 }
